@@ -552,5 +552,174 @@ color:white;
      .socials{
         justify-content: flex-start;
         gap: 2rem;
+        padding-left: 0;
      }
+}
+
+
+@media (width>1024px)  {
+
+    .brand{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+       }
+        .topmenu{
+                display: flex;
+                justify-content: space-around;
+                gap: 2rem;
+        }
+        .topmenu li a{
+            color: #fff;
+        }
+    .menu-icon{
+        display: none;
+    }
+    
+    .menu{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .menu li.sign a {
+     
+    color:white;
+    }
+    .menu li.try a {
+        background-color: white;
+        color:#540B51;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        }
+    
+        header{
+    
+            background-color: #540B51;
+            background-size: cover;
+            background-position: top left;
+            background-repeat: no-repeat;
+            display: flex;
+            padding: 6rem 12rem;
+            justify-content: space-between;
+            align-items: center;
+           }
+         
+           .partners-images{
+            flex-wrap: nowrap;
+           }
+           .hero{
+            overflow: hidden;
+           }
+           .hero img{
+            width: 70%;
+            
+           }
+          .title{
+            width: 100%;
+          }
+
+          .title h1{
+            width: 40%;
+            text-align: left;
+          }
+          .title p{
+            text-align: left;
+            padding-left: 0;
+          }
+         .buttons-main{
+
+            flex-direction: row;
+            gap: 1rem;
+         }
+         .buttons-main button{
+            border-radius: 0.1rem;
+            font-size: 0.7rem;
+            padding: 0.4rem 0.5rem;
+            height: unset;
+         }
+           .team{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+           }
+    
+           .team img{
+            width: 50%;
+           }
+    
+           .reverse{
+            flex-direction: row-reverse;
+            
+           }
+           .team-img2 img{
+            margin-left: 50%;
+           }
+           .team h2{text-align: left;}
+    
+           .team p, .team a{
+            padding: 2rem;
+           }
+    
+           .slack {
+          
+            padding: 2rem 14rem;
+           }
+
+           .button-slack{
+            flex-direction: row;
+            justify-content: center;
+            gap:1rem;
+           }
+           .results{
+            display: flex;
+            justify-content: space-between;
+           }
+          .slack p{
+            font-size: .8rem;
+          }
+           .results li{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            font-weight: bolder;
+            text-align: left;
+            width: 15%;
+    
+           }
+           .results li p span:first-child{
+                font-size: 3rem;
+           }
+    
+           .digitals-buttons{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 2rem;
+           }
+           .digitals-buttons button:first-child{
+            color: #540B51;
+            background-color: #F3EAE2;
+        }
+        .digitals-buttons button:last-child{
+            background-color: #540B51;
+            color: #F3EAE2;
+           
+        }
+        .menu-bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 12px;
+         }
+        
+         .socials{
+            justify-content: flex-start;
+            gap: 2rem;
+            padding-left: 0;
+         }
+
+
 }
