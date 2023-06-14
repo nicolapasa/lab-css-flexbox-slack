@@ -70,7 +70,9 @@ footer links grey: #454245
 */
 
 body{
-    background-color: #540B51;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+
 }
 
 .navbar{
@@ -79,6 +81,7 @@ body{
     align-items: center;
     height: 100px;
     padding: 1rem;
+    background-color: #540B51;
 }
 
 .topmenu{
@@ -97,11 +100,12 @@ body{
 
 header{
     width: 100%;
+    background-color: #540B51;
 }
 .title{
     text-align: center;
     padding: 1.5rem;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 .title h1{
@@ -123,34 +127,34 @@ header{
     display: flex;
     flex-direction: column;
 }
-.signup{
 
-    background-color: #F3EAE2;
-    padding: 1.2rem;
-    color: #540B51;
+.buttons-main button{
+    padding: 0;
     border-radius: 0.5rem;
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: bolder;
+    height: 3rem;
+}
+.signup{
+
+    background-color: #F3EAE2;
+
+    color: #540B51;
+  
 }
 .google-button{
     background-color: #4285F4;
     color: #fff;
-    position: relative;
-    font-weight: bolder;
-    text-transform: uppercase;
-    padding: 1.2rem;
-    text-align: center;
-    border-radius: 0.5rem;
-    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .google-button img{
     background-color:#fff;
-    position: absolute;
-    left: 5px;
-    top: 5px;
     width: 40px;
+    border-radius: 0.5rem;
 }
 
 .hero img{
@@ -164,6 +168,8 @@ main{
 .partners{
     text-align: center;
     padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
 }
 .partners p{
     text-align: center;
@@ -189,7 +195,7 @@ main{
 .team{
     margin: 2rem 0;
 }
-.team-img img{
+.team-img img, .team-img2 img{
     width: 100%;
 }
 .team h2{
@@ -243,7 +249,7 @@ main{
     flex-direction: column;
 }
 .button-slack button{
-    border-radius: 0.5rem;
+    border-radius: 0.1rem;
     padding: 1rem;
     text-align: center;
     font-weight: bold;
@@ -354,8 +360,68 @@ footer img{
     margin: 1rem auto;
     color: #454245;
 }
-@media (min-width:700px)  {
+@media (min-width:768px) and (max-width:1024px)  {
       
+  header{
+    background-image: url('../images/background-singup.png');
+    background-color: #540B51;
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    display: flex;
+   }
+ 
+   .partners-images{
+    flex-wrap: nowrap;
+   }
+main{
+    width: 100%;
+}
+
+   .team-img img{
+      width: 80%;
+   }
+
+   .team {
+    margin: 3rem auto;
+   }
+
+   .team-img2 img{
+    width: 80%;
+    margin-left: 20%;
+ }
 
 
+
+.team p{
+
+    padding: 1rem 5rem;
+}
+
+.team a {
+    padding: 1rem 5rem;
+}
+ .button-slack{
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+    justify-content: center;
+ }
+ .results{
+    display: flex;
+
+ }
+
+ .menu-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+ }
+
+ .socials{
+    justify-content: flex-start;
+    gap: 2rem;
+ }
 }
